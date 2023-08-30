@@ -1,0 +1,20 @@
+// Kafka setup on windows
+
+-> First install zip file from kafka official website
+-> we will get zookeeper software with kafka zip file
+
+-> after extracting the kafka zip file paste it in root directory like in c folder other wise we will get an error saying path is too lengthy.
+
+
+// Run zookeeper first - default port 2181	
+Open command prompt in location where bin folder is located in Kafka folder.
+
+use following command to start zookeeper
+C:\kafka_2.12-3.5.0\kafka_2.12-3.5.0>bin\windows\zookeeper-server-start.bat config\zookeeper.properties
+we should mention configuration also, in zookeeper.properties, file configurations are stored like port numbers etc.
+
+// Run Kafka server secondly - default port 9092
+Open a new command prompt in location where bin folder is located in kafka folder.
+
+use following command to start kafka server
+C:\kafka_2.12-3.5.0\kafka_2.12-3.5.0>bin\windows\kafka-server-start.bat config\server.properties
