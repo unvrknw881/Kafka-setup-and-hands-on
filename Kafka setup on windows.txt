@@ -18,3 +18,23 @@ Open a new command prompt in location where bin folder is located in kafka folde
 
 use following command to start kafka server
 C:\kafka_2.12-3.5.0\kafka_2.12-3.5.0>bin\windows\kafka-server-start.bat config\server.properties
+
+
+//create a topic using the following command 
+bin\windows\kafka-topics.bat --create --topic name --bootstrap-server localhost:9092
+
+//to describe(list) the topics created use the following command
+bin\windows\kafka-topics.bat --describe --topic name --bootstrap-server localhost:9092
+
+//to create a kafka-console-producer use following command
+bin\windows\kafka-console-producer.bat --topic name --bootstrap-server localhost:9092
+
+//to create a kafka-console-consnumer use following command
+bin\windows\kafka-console-consumer.bat --topic name --from-beginning --bootstrap-server localhost:9092
+
+
+
+
+
+
+
